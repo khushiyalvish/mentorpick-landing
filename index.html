@@ -21,12 +21,44 @@
             color: white;
         }
 
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        .nav-btn {
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            background: #38bdf8;
+            color: #0f172a;
+            transition: 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 20px;
+            padding: 100px 20px 40px;
             text-align: center;
         }
 
@@ -89,6 +121,7 @@
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
+
             .hero h1 {
                 font-size: 32px;
             }
@@ -96,11 +129,31 @@
             .hero p {
                 font-size: 16px;
             }
+
+            .navbar {
+                padding: 15px 5%;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .nav-btn {
+                padding: 8px 14px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">MentorPick</div>
+        <a href="#" class="nav-btn">Get Started</a>
+    </div>
+
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>
