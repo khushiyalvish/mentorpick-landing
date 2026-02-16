@@ -19,46 +19,17 @@
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: white;
-        }
-
-        /* Navbar */
-        .navbar {
-            width: 100%;
-            padding: 20px 8%;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            top: 0;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: 700;
-            color: #38bdf8;
-        }
-
-        .nav-btn {
-            padding: 10px 18px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            background: #38bdf8;
-            color: #0f172a;
-            transition: 0.3s;
-        }
-
-        .nav-btn:hover {
-            background: #0ea5e9;
-        }
-
-        /* Hero Section */
-        .hero {
+            flex-direction: column;
             min-height: 100vh;
+        }
+
+        .hero {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 100px 20px 40px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -81,7 +52,7 @@
             font-size: 18px;
             color: #cbd5e1;
             line-height: 1.6;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
 
         .btn-group {
@@ -96,7 +67,7 @@
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
-            transition: 0.3s ease;
+            transition: all 0.3s ease;
             display: inline-block;
         }
 
@@ -107,6 +78,7 @@
 
         .btn-primary:hover {
             background: #0ea5e9;
+            transform: translateY(-2px);
         }
 
         .btn-outline {
@@ -117,11 +89,32 @@
         .btn-outline:hover {
             background: #38bdf8;
             color: #0f172a;
+            transform: translateY(-2px);
+        }
+
+        /* Scrolling Footer */
+        .footer {
+            background: #0f172a;
+            padding: 12px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .footer-content {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scrollText 15s linear infinite;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        @keyframes scrollText {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
-
             .hero h1 {
                 font-size: 32px;
             }
@@ -130,30 +123,15 @@
                 font-size: 16px;
             }
 
-            .navbar {
-                padding: 15px 5%;
-            }
-
-            .logo {
-                font-size: 18px;
-            }
-
-            .nav-btn {
-                padding: 8px 14px;
-                font-size: 14px;
+            .btn {
+                width: 100%;
+                max-width: 280px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo">MentorPick</div>
-        <a href="#" class="nav-btn">Get Started</a>
-    </div>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>
@@ -174,6 +152,12 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            © 2026 MentorPick. All Rights Reserved. | Built with passion for growth 🚀
+        </div>
+    </footer>
 
 </body>
 </html>
