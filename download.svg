@@ -1,0 +1,26 @@
+<svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="mpGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="50%" stop-color="#5BC0F8"></stop>
+      <stop offset="100%" stop-color="#2F80ED"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Background Box -->
+  <rect x="5" y="10" width="50" height="50" rx="12" fill="#0F172A"></rect>
+
+  <!-- MP Monogram -->
+  <text x="15" y="45" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="700" fill="url(#mpGradient)">MP</text>
+
+  <!-- Upward Arrow inside P (Growth Symbol) -->
+  <path d="M42 28 L48 22 L48 28 Z" fill="url(#mpGradient)"></path>
+
+  <!-- Brand Name -->
+  <text x="70" y="45" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="600" fill="url(#mpGradient)">
+    MentorPick
+  </text>
+
+</svg>
